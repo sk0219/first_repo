@@ -5,3 +5,7 @@ class Product(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     thumbnail = models.ImageField(upload_to='thumbnails/')
+
+
+    def __str__(self):
+        return self.name
